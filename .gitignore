@@ -1,0 +1,26 @@
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Log files (auto-generated at runtime)
+venere/clap_detector.log
+venere/clap_debug.log
+venere/launchagent.log
+
+# Personal data — do not commit
+PhotosBackup/
+
+# Editor/IDE
+.vscode/
+.idea/
