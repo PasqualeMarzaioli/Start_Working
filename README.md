@@ -221,9 +221,3 @@ AntiGravity/
 
 **Microphone permission denied**
 → System Settings → Privacy & Security → Microphone → enable Terminal or Python.
-
----
-
-## License
-
-MIT
