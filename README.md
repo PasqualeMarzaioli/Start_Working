@@ -127,14 +127,14 @@ pkill -f key_detector.py
 
 1. Open the **Shortcuts** app on your Mac
 2. Click **+** to create a new shortcut
-3. Name it `Start StartWorking` (or whatever word you want to say)
+3. Name it `Let's Start Working` (or whatever word you want to say)
 4. Add the action **Run Shell Script**
 5. Set Shell to `/bin/bash` and paste:
    ```bash
    bash /Users/YOUR_USERNAME/Desktop/start_working/launch_start_working.sh
    ```
 6. Save the shortcut
-7. Say: **"Hey Siri, start StartWorking"** (or your chosen name)
+7. Say: **"Hey Siri, let's Start Working"** (or your chosen name)
 
 ### Option D — Auto-start at login (LaunchAgent)
 
