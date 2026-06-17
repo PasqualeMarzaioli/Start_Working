@@ -1,15 +1,15 @@
 #!/bin/bash
 # =============================================================================
-# launch_venere.sh — Main Venere launcher script
+# launch_start_working.sh — Main StartWorking launcher script
 #
 # Triggered by:
-#   - A double clap (via clap_detector.py)
-#   - A voice command "esili" (via Siri Shortcut — see README)
-#   - Running this script directly: bash venere/launch_venere.sh
+#   - A triple Option-key press (via key_detector.py)
+#   - A voice command "Start StartWorking" (via Siri Shortcut — see README)
+#   - Running this script directly: bash launch_start_working.sh
 #
 # What it does:
-#   1. Opens the AntiGravity app
-#   2. Opens MATLAB
+#   1. Opens Visual Studio Code
+#   2. Opens MATLAB (optional)
 #   3. Plays a Spotify track via AppleScript
 #   4. Opens Safari tabs: Overleaf and Gemini
 #   5. Waits for everything to load, then plays the voice announcement
@@ -18,9 +18,10 @@
 # =============================================================================
 
 # ---------------------------------------------------------------------------
-# [CUSTOMIZE] Path to your AntiGravity project folder
+# [CUSTOMIZE] Path to your StartWorking project folder
 # ---------------------------------------------------------------------------
-ANTIGRAVITY_DIR="$HOME/Desktop/AntiGravity"
+START_WORKING_DIR="$(dirname "$(realpath "$0")")"
+
 
 # ---------------------------------------------------------------------------
 # [CUSTOMIZE] Apps to open
@@ -28,11 +29,11 @@ ANTIGRAVITY_DIR="$HOME/Desktop/AntiGravity"
 # Usage: open -a "App Name"
 # ---------------------------------------------------------------------------
 
-# Open the AntiGravity native app (if installed)
-open /Applications/Antigravity.app
+# Open the Visual Studio Code native app (if installed)
+open -a "Visual Studio Code"
 
 # Open MATLAB (change version string to match your installation)
-open -a "MATLAB_R2025b"
+# open -a "MATLAB_R2025b"
 
 # ---------------------------------------------------------------------------
 # [CUSTOMIZE] Spotify — play a specific track or playlist
@@ -66,4 +67,10 @@ open -a Safari "https://gemini.google.com"
 # Increase the value (in seconds) if some apps are slow to start on your Mac
 # ---------------------------------------------------------------------------
 sleep 15
-/usr/bin/python3 "$(dirname "$0")/announce.py"
+# Run announcement using the virtual environment python if available
+SCRIPT_DIR="$(dirname "$(realpath "$0")")"
+if [ -f "$SCRIPT_DIR/venv/bin/python3" ]; then
+    "$SCRIPT_DIR/venv/bin/python3" "$SCRIPT_DIR/announce.py"
+else
+    /usr/bin/python3 "$SCRIPT_DIR/announce.py"
+fi

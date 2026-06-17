@@ -14,9 +14,8 @@ __pycache__/
 *.pyo
 
 # Log files (auto-generated at runtime)
-venere/clap_detector.log
-venere/clap_debug.log
-venere/launchagent.log
+*.log
+nohup.out
 
 # Personal data — do not commit
 PhotosBackup/
