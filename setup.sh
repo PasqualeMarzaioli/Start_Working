@@ -32,7 +32,11 @@ chmod +x "$SCRIPT_DIR/key_detector.py"
 chmod +x "$SCRIPT_DIR/start_listener.sh"
 chmod +x "$SCRIPT_DIR/boot_detector.sh"
 
+# Create logs directory
+mkdir -p "$HOME/Library/Logs/StartWorking"
+
 echo "→ Configuring paths and username dynamically..."
+
 # Run Python post-installation config
 python3 -c "
 import os

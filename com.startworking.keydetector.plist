@@ -16,7 +16,7 @@
         <string>-e</string>
         <string>delay 15
 tell application "Terminal"
-    set newWindow to do script "nohup /Users/pasquale_marzaioli/Desktop/Coding/start_working/venv/bin/python3 /Users/pasquale_marzaioli/Desktop/Coding/start_working/key_detector.py > /Users/pasquale_marzaioli/Desktop/Coding/start_working/key_detector.log 2&gt;&amp;1 &amp;; sleep 2; exit"
+    set newWindow to do script "nohup /Users/pasquale_marzaioli/Desktop/Coding/start_working/venv/bin/python3 /Users/pasquale_marzaioli/Desktop/Coding/start_working/key_detector.py > /Users/pasquale_marzaioli/Library/Logs/StartWorking/key_detector.log 2&gt;&amp;1 &amp;; sleep 2; exit"
     set visible of first window to false
 end tell</string>
     </array>
@@ -25,9 +25,9 @@ end tell</string>
     <true/>
 
     <key>StandardOutPath</key>
-    <string>/Users/pasquale_marzaioli/Desktop/Coding/start_working/launchagent.log</string>
+    <string>/Users/pasquale_marzaioli/Library/Logs/StartWorking/launchagent.log</string>
 
     <key>StandardErrorPath</key>
-    <string>/Users/pasquale_marzaioli/Desktop/Coding/start_working/launchagent.log</string>
+    <string>/Users/pasquale_marzaioli/Library/Logs/StartWorking/launchagent.log</string>
 </dict>
 </plist>
