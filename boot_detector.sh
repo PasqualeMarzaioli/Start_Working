@@ -2,6 +2,9 @@
 # =============================================================================
 # boot_detector.sh — Starts the key detector after system boot
 #
+# Description: Delays and starts the key detector listener after system login.
+# Author: Pasquale Marzaioli
+#
 # This script is intended to be called by the LaunchAgent plist
 # (com.startworking.keydetector.plist) at login.
 #

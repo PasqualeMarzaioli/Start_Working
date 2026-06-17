@@ -2,6 +2,9 @@
 """
 key_detector.py — Listens to keyboard events and triggers StartWorking on triple Option-key press.
 
+Description: Listens for Option key press sequences to trigger the workspace launcher script.
+Author: Pasquale Marzaioli
+
 How it works:
   1. Hooks into macOS global accessibility/keyboard events using pynput.
   2. Tracks the press/release states of the Option (Alt) key.

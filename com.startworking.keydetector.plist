@@ -3,6 +3,9 @@
 <!--
   com.startworking.keydetector.plist — macOS LaunchAgent for StartWorking
 
+  Description: Configures launchd to automatically launch the key detector at system login.
+  Author: Pasquale Marzaioli
+
   This file tells macOS to start the key detector automatically at every login.
 -->
 <plist version="1.0">

@@ -2,6 +2,9 @@
 # =============================================================================
 # launch_start_working.sh — Main StartWorking launcher script
 #
+# Description: Automates starting the work environment by launching specific apps, browser tabs, music, and playing a voice alert.
+# Author: Pasquale Marzaioli
+#
 # Triggered by:
 #   - A triple Option-key press (via key_detector.py)
 #   - A voice command "Start StartWorking" (via Siri Shortcut — see README)

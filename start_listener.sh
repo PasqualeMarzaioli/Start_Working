@@ -2,6 +2,9 @@
 # =============================================================================
 # start_listener.sh — Manually start the key detector in the background
 #
+# Description: Kills any existing key detector instance and starts a new listener process in the background.
+# Author: Pasquale Marzaioli
+#
 # Use this if you want to start the listener without rebooting.
 # It kills any existing key_detector.py instance first, then relaunches it
 # and tails the log so you can see what's happening.

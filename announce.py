@@ -2,6 +2,9 @@
 """
 announce.py — Voice announcement played when StartWorking is launched.
 
+Description: Generates and plays the voice announcement notifying that the environment is ready.
+Author: Pasquale Marzaioli
+
 Uses macOS built-in TTS voice:
   - "Samantha (Enhanced)" (English) says "you can start working now"
 

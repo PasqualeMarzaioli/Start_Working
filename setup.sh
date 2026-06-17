@@ -2,6 +2,9 @@
 # =============================================================================
 # setup.sh — One-time setup script for StartWorking
 #
+# Description: Installs project dependencies, updates file execution permissions, and dynamically configures file paths inside the templates.
+# Author: Pasquale Marzaioli
+#
 # Run this once after cloning the repository:
 #   bash setup.sh
 #

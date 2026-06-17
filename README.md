@@ -2,6 +2,9 @@
 
 **StartWorking** is a macOS automation system that launches your entire work environment in one action.
 
+- **Description**: macOS automation tool to dynamically launch applications, browser tabs, play custom music, and alert users via voice triggers.
+- **Author**: Pasquale Marzaioli
+
 Trigger it by:
 - **Pressing the Option (Alt) key three times** (background modifier key listener)
 - **Saying a voice command** via Siri Shortcut (e.g. "Start StartWorking")
